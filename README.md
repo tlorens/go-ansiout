@@ -19,4 +19,4 @@ func main() {
 }
 ```
 
-Unfortunately, this is a bit dependent on my [ibkey](https://github.com/tlorens/ibgetkey) library.
+Unfortunately, this is a bit dependent on my [go-ibgetkey](https://github.com/tlorens/go-ibgetkey) library.
