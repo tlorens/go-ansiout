@@ -18,3 +18,5 @@ func main() {
 	fmt.Print("Grey on Blue Text")
 }
 ```
+
+Unfortunately, this is a bit dependent on my [ibkey](https://github.com/tlorens/ibgetkey) library.
