@@ -20,3 +20,8 @@ func main() {
 ```
 
 Unfortunately, this is a bit dependent on my [go-ibgetkey](https://github.com/tlorens/go-ibgetkey) library.
+
+
+Screenshot of what my intent was.
+
+![BBS Menu](https://dl.dropboxusercontent.com/u/2934311/stupid-bbs.png)
