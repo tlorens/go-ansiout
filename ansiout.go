@@ -206,6 +206,36 @@ func Print(f int, b int, s string) {
 	fmt.Printf("%s", s)
 }
 
+/**
+ *
+ *	Print a string at X, Y coordinates
+ *
+ * 	integer x X coordinate
+ * 	integer y Y coordinate
+ * 	string s Message to print
+ *
+ */
+func PrintXY(x int, y int, s string) {
+	GotoXY(x,y)
+	fmt.Printf("%s", s)
+}
+
+
+/**
+ *
+ *	Short-cut to print a string is specified X,Y coordinate with forecolor/backcolor.
+ *
+ *	integer f Forground color value 0-15
+ *	integer b background color value 0-7
+ * 	integer x X coordinate
+ * 	integer y Y coordinate
+ *	string s String to print
+ *
+ */
+func PrintColorXY(f int, b int, x int, y int, s string) {
+	Color(f, b)
+	PrintXY(x, y, s)
+}
 
 /**
  *
@@ -239,20 +269,6 @@ func Color(f int, b int) {
 
 		fmt.Printf(ESC + "%s%d;%dm", tmp, fg, bg)
 	}
-}
-
-/**
- *
- *	Print a string at X, Y coordinates
- *
- * 	string s Message to print
- * 	integer x X coordinate
- * 	integer y Y coordinate
- *
- */
-func PrintXY(s string, x int, y int) {
-	GotoXY(x,y)
-	fmt.Printf("%s",s)
 }
 
 
