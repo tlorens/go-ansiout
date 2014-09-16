@@ -17,7 +17,7 @@ import (
 	"strings"
 	"strconv"
 	"time"
-	"github.com/tlorens/ibkey"
+	"github.com/tlorens/keyboard"
 )
 
 const ESC = "\033["
@@ -105,7 +105,7 @@ func CursorXY() (int, int) {
 	fmt.Print(ESC + "6n")
 
 	for ch != 'R' {
-		ch = ibkey.ReadKey(true)
+		ch = keyboard.RawKey()
 		if ch != 27 && ch != '[' {
 			ret = append(ret, ch)
 		}
